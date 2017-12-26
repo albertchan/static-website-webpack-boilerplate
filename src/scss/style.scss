@@ -1,0 +1,113 @@
+@import "bootstrap";
+@import "variables";
+@import "buttons";
+@import "forms";
+
+html {
+	// font-size: 62.5%;
+}
+
+body {
+	background-color: #fff;
+	color: $color-text;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.navbar-brand {
+	> img {
+		height: 36px;
+	}
+}
+
+.navbar-expand-lg {
+	&.navbar {
+		align-items: center;
+		position: absolute;
+		top: 0;
+    right: 0;
+    left: 0;
+		padding: 2.4rem;
+
+		@media (min-width: 992px) {
+			padding: $navbar-padding;
+		}
+	}
+
+	.navbar-brand {
+		margin-right: auto;
+		font-size: 2.4rem;
+	}
+
+	.navbar-nav {
+		.fa {
+			font-size: 2.4rem;
+		}
+
+		.nav-link {
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+			color: $navbar-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+
+			&.active {
+				color: $color-primary;
+			}
+
+			&:hover {
+				color: $color-accent;
+			}
+		}
+	}
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	padding: $section-padding-mobile;
+
+	@media (min-width: 992px) {
+		padding: $section-padding-desktop;
+	}
+}
+
+.intro {
+  height: 100vh;
+  max-height: 960px;
+  min-height: 894px;
+  background-image: url('../img/hero.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	h1 {
+		font-size: 3.5rem;
+		text-transform: uppercase;
+	}
+
+	.lead {
+		font-size: 2.25rem;
+	}
+
+	@media (min-width: 992px) {
+		.content {
+			width: 70%;
+		}
+	}
+}
+
+.footer {
+	padding: 2.4rem 1.6rem;
+	background-color: $footer-background-color;
+
+	@media (min-width: 992px) {
+		padding: $navbar-padding;
+	}
+}
